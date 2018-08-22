@@ -11,9 +11,72 @@
     Chromium <script>document.write(process.versions.chrome)</script>,
     and Electron <script>document.write(process.versions.electron)</script>.
 
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>more text</p>
+    <p>why dont you print</p>
+    <p>why dont you print</p>
+    <p>why dont you print</p>
+    <p>why dont you print</p>
+    <p>why dont you print</p>
+    <p>why dont you print</p>
+    <p>why dont you print</p>
+    <p>why dont you print</p>
+    <p>other</p>
+    <p>other</p>
+    <p>other</p>
+    <p>other</p>
+    <p>other</p>
+    <p>other</p>
+    <p>other</p>
+    <p>other</p>
+    <p>other</p>
+    <p>other</p>
+    <p>other</p>
+    <p>other</p>
+    <button onclick="javascript:printMe()">print me</button>
+
     <script>
       // You can also require other files to run in this process
       require('./renderer.js')
+      const ipcRenderer = require('electron').ipcRenderer
+      function printMe() {
+          ipcRenderer.send('printMe')
+      }
+
     </script>
   </body>
 </html>
